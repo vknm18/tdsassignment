@@ -1,7 +1,10 @@
 import streamlit as st
 
-st.title('Multiplication of 2 numbers')
+st.title('Checking whether number is odd or even')
 a = st.number_input('Enter a number')
-b = st.number_input('Enter another number')
-result = a * b
-st.write(a, ' * ', b , '= ', result)
+result = ''
+if a % 2 == 0:
+  result = 'Odd'
+else:
+  result = 'Even'
+st.write(result)
